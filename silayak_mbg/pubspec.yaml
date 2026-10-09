@@ -1,0 +1,46 @@
+name: silayak_mbg
+description: "Aplikasi SI-LAYAK MBG - Sistem Pelaporan Kelayakan Makanan pada Program Makan Bergizi Gratis (mode lokal/offline untuk demo di 1 HP)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.5.0
+
+  cupertino_icons: ^1.0.8
+
+  # Database lokal SQLite (tanpa server/API sama sekali)
+  sqflite:
+  path:
+  path_provider:
+
+  # Hash password (SHA-256) untuk akun yang tersimpan lokal
+  crypto:
+
+  # State management
+  provider:
+
+  # Menyimpan sesi login secara aman di perangkat
+  flutter_secure_storage:
+
+  # Mengambil foto bukti lewat kamera / galeri
+  image_picker:
+
+  # Export laporan ke PDF
+  pdf:
+  printing:
+
+  # Membagikan/menyimpan file CSV hasil export
+  share_plus:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
